@@ -1,0 +1,43 @@
+<html>
+<body>
+<meta charset="UTF-8"> 
+<h1 style="font-family:verdana;">Instructions:</h1>
+<h2 style="font-family:verdana;">Jose Luis Cabrera Alarcon</h2>
+<h3 style="font-family:verdana;">2019-03-16</h3>
+
+<p>Jose Luis Cabrera Alarcon 
+<a href="mailto:jlcabreraa@cnic.es?Subject=Hello%20again" target="_top">
+(jlcabreraa@cnic.es)</a>
+</p>
+<p>This app is a web interface for VSRFM/VSRFM-s scores calculation, to aid in variant prioritization.</p>
+
+<p>1. Click on “VSRFM” or “VSRFM-s” to select the score to calculate.</p>
+<img src="./images/options.jpg" alt="options" width="700" height="500">
+
+<p>2. Click on “browser" to upload variants data.</p>
+<img src="./images/browse.jpg" alt="browse" width="700" height="500">
+<p>Uploaded data must be in tab separated values with ".tsv" or ".txt" extesion. For VSRFM must contain the following variables under these exact headers:</p>
+<p style="color:Tomato;">gnomAD_AF</p>
+<p style="color:Tomato;">CADD_PHRED</p>
+<p style="color:Tomato;">Condel</p>
+<p style="color:Tomato;">DANN_score</p>
+<p style="color:Tomato;">MetaLR_score</p>
+<p style="color:Tomato;">MetaSVM_score</p>
+<p style="color:Tomato;">REVEL_score</p>
+<p style="color:Tomato;">phastCons100way_vertebrate</p>
+<p style="color:Tomato;">phastCons20way_mammalian</p>
+<p style="color:Tomato;">phyloP100way_vertebrate</p>
+<p style="color:Tomato;">phyloP20way_mammalian</p>
+<p>For VSRFMs, in addition to the above variables, must contain:</p>
+<p style="color:Tomato;">ada_score</p>
+<p style="color:Tomato;">rf_score</p>
+
+<p>3. You can change the purpose cutoff value to clasify variants in benign or pathogenic:</p>
+<img src="./images/cutoff.jpg" alt="download" width="700" height="500">
+
+<p>4. Hit “Download data” to save the results table to a csv file:</p>
+<img src="./images/download.jpg" alt="download" width="700" height="500">
+
+
+</body>
+</html>
